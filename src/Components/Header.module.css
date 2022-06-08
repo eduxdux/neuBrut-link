@@ -1,0 +1,40 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+}
+
+.header a{
+  float: left;
+  color: var(--black);
+  text-align: center;
+  padding: 0.8rem 1.2rem;
+  margin: 1rem 1rem 0 0;
+  text-decoration: none;
+  font-size: 1rem;
+
+  background: var(--white);
+  border-radius: 0.4rem;
+
+  border: solid var(--black);
+  border-width: 2px;
+}
+
+.header :global(.active){
+  background: var(--secondary);
+  color: white;
+  box-shadow: 0.3rem 0.3rem 0 var(--black);
+}
+
+.header a:hover{
+  background-color: var(--secondary);
+  color: var(--white);
+  box-shadow: 0.3rem 0.3rem 0 var(--black);
+}
+
+.right{
+  float: right;
+}
+
